@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Testing <GridItem /> > Should match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="One Punch Man GIF"
+      src="https://media2.giphy.com/media/VXJWhaO7afRe/giphy.gif?cid=9f017724sa8fjxmpligfbyoguybcvci91u0m7p7x2i7gfa7k&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    />
+    <p>
+      One Punch Man GIF
+    </p>
+  </div>
+</div>
+`;
