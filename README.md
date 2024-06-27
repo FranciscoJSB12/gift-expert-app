@@ -1,4 +1,4 @@
-# Gif Expext App
+# Gif Expert App
 
 Aplicación web creada con React y Typescript que consulta la API de Giphy y renderiza un grupo de Gifs de acuerdo con una palabara clave.
 
