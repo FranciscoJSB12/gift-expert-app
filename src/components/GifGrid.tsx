@@ -13,12 +13,12 @@ export const GifGrid = ({ category }: Props) => {
       <h3>{category}</h3>
 
       {!isLoading && error && (
-        <p>No se pudo cargar la información, prueba de nuevo...</p>
+        <p>Error cargando la información, prueba de nuevo...</p>
       )}
 
       {isLoading && <p>Cargando...</p>}
 
-      {images.length === 0 && <p>No se encontró resultados</p>}
+      {!error && !isLoading && images.length === 0 && <p>Sin resultados</p>}
 
       <div className='card-grid'>
         {images.map(image => (
