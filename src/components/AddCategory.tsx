@@ -7,8 +7,9 @@ interface Props {
 export const AddCategory = ({ onAddCategory }: Props) => {
   const [inputValue, setInputValue] = useState('');
 
-  const onChangeInput = (e: ChangeEvent<HTMLInputElement>): void =>
+  const onChangeInput = (e: ChangeEvent<HTMLInputElement>): void => {
     setInputValue(e.target.value);
+  };
 
   const onSubmitForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,7 +24,10 @@ export const AddCategory = ({ onAddCategory }: Props) => {
   };
 
   return (
-    <form onSubmit={onSubmitForm}>
+    <form
+      onSubmit={onSubmitForm}
+      aria-label='form'
+    >
       <input
         type='text'
         placeholder='Buscar gifs'
